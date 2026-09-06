@@ -5,6 +5,7 @@
 
 import Foundation
 
+/// Why a diagram could not be rendered.
 public enum DiagramError: Error, LocalizedError, Equatable {
 
     /// Mermaid or dot refused the source. The message is theirs.
@@ -19,6 +20,7 @@ public enum DiagramError: Error, LocalizedError, Equatable {
     case empty
     case cannotWrite(String)
 
+    /// A one-line reason, for a CLI or a log.
     public var errorDescription: String? {
         switch self {
         case let .syntax(message): return message

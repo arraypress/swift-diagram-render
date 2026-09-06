@@ -23,6 +23,7 @@ public struct Rendering: Sendable {
 
     /// Only present when asked for.
     public let png: Data?
+    /// The diagram as a one-page PDF, when it was asked for.
     public let pdf: Data?
 
     public init(svg: String, size: CGSize, png: Data? = nil, pdf: Data? = nil) {

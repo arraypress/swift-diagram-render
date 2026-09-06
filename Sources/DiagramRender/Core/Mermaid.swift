@@ -24,6 +24,7 @@ public enum Mermaid {
 
     /// How to render.
     public struct Options: Sendable {
+        /// Which palette the diagram is drawn in.
         public var theme: DiagramTheme
         /// Pixel density for PNG. 2 gives a Retina-sized image.
         public var scale: Double
